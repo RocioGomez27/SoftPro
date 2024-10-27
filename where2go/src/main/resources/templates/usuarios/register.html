@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen">
+        <link rel="stylesheet" href="" th:href="@{/css/styleLogin.css}"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" th:href="@{/images/logo.png}" type="image/png" sizes="256x256">
+
+		<title> Where2Go Registro </title>
+	</head>
+
+	<body>
+        <h1 class="titulo">Registro</h1>
+   
+		<div class="Resto">
+
+            <div class="incorrectContainer" th:if="${badLogin == true}">
+                <div class="invalidLogin">
+                    <h2>Usuario ya existente.</h2>
+                </div>
+            </div>
+
+            <form class="formulario" th:action="@{/register}" method="post" th:object="${usuario}">
+                <div class="container">
+                    <label>Usuario : </label>
+                    <input required class="inputX" type="text" th:field="*{username}">
+
+                    <label for="email"> Email: </label>
+                    <input required class="inputX" type="text" th:field="*{email}">
+
+                    <label for="Nombre"> Nombre: </label>
+                    <input required class="inputX" type="text" th:field="*{nombre}">
+
+                    <label for="Apellido"> Apellidos: </label>
+                    <input required class="inputX" type="text" th:field="*{apellido}">
+
+                    <label for="Edad"> Edad: </label>
+                    <input required class="inputX" type="text" th:field="*{edad}">
+
+                    <label for="avatar"> AvatarUrl: </label>
+                    <input class="inputX" type="text" th:field="*{avatar}">
+
+                    <label>Contraseña: </label>
+                    <input minlength="5" class="inputX" type="password" th:field="*{password}">
+                    <div class="submitButton">
+                        <button type="submit">Registrarme</button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="go_toRegister">
+                <div>        
+                    <span> ¿Ya tienes una cuenta?</span><br>
+                    <a th:href="@{/home}">Logeate</a>
+                </div>
+            </div>
+		</div>
+	</body>
+</html>

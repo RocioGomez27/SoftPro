@@ -1,0 +1,107 @@
+/*Azul: #00E8FA; */
+
+body{
+    font-family: 'Oxygen';
+    margin: 0;
+    background: rgb(152,63,246);
+    background: linear-gradient(90deg, rgba(152,63,246) 10%, #01bceb);  
+}
+
+
+hr{
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.Header {
+    overflow: hidden;
+    background-color: rgb(9, 24, 56);
+    padding: 5px 20px;
+}
+
+.Header h3 {
+    float: left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.Header h3:hover {
+    cursor: pointer;
+}
+
+.UserLog{
+    float: right;
+    color: white;
+}
+
+.Resto {
+    padding: 30px 20px;
+    overflow: hidden;
+}
+
+
+.cajaInputs{
+    font-family: 'Oxygen';
+    margin: auto;
+    background-color: rgb(9, 24, 56);
+    padding: 50px 50px;
+    max-width: 40%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.8);
+}
+
+.Titulo {
+    margin-top: -10px;
+}
+
+.formulario {
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.Campo {
+    padding: 5px 5px;
+    text-align: center;
+}
+
+.inputX {
+    justify-content: space-between;
+    border: none;
+    background-color: white;
+    color: #01bceb;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+    outline: none;
+    border-radius: 2px;
+}
+
+.ButtonContainer{
+    padding: 10px 10px;
+}
+
+.Button{
+    font-family: 'Oxygen';
+    border: none;
+    outline: none;
+    background-color: rgb(9, 24, 56);
+    box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 10px 50px;
+    font-weight: bold;
+    color: white;
+    transition: all .2s ease-in-out ;
+
+}
+
+
+.Button:hover {
+    background-color: rgb(5, 12, 29);
+    cursor: pointer;
+}

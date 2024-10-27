@@ -1,0 +1,4 @@
+El usuario recibe una notificación del lugar que ha visitado gracias a las recomendaciones de la aplicación,
+se le facilita un cuestionario en el que hay preguntas sobre el lugar visitado.
+Si el usuario responde correctamente, se registran las respuestas y se agradece la colaboración al usuario,
+por el contrario si el usuario ignora la notificación, no se hará nada al respecto.

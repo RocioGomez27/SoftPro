@@ -1,0 +1,4 @@
+El usuario notifica un error que haya encontrado en la aplicación mediante correo electrónico.
+El correo llega al administrador, que intenta arreglar el código de la app. En caso exitoso, 
+tras probar que funciona, se le responde al cliente con un correo agradeciendo su notificación.
+En caso contrario, le informamos de que no hemos sido capaces de arreglar el error.

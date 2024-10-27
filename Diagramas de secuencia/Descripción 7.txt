@@ -1,0 +1,5 @@
+El  administrador pide un usuario, el cuál le entregará el UsuarioController, que para encontrarlo
+tiene que pedirle al UsuarioService que acceda al repositorio de usuarios y encuentre al susodicho.
+Una vez encontrado (o no) entrega al UsuarioController el usuario. Si le manda al administrador el 
+usuario pedido, éste procederá a crear o eliminar (según el contexto de la situación) una cuenta de 
+moderador. En caso de que no le llegue ningún usuario, el administrador no podrá hacer nada. 

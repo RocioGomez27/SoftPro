@@ -1,0 +1,336 @@
+body{
+    margin: 0;
+    font-family: 'Oxygen';
+	background: rgb(152,63,246);
+    background: linear-gradient(90deg, rgba(152,63,246) 10%, #01bceb);     
+    height: fit-content;
+}
+
+.mainHeader{
+    overflow: hidden;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(9, 24, 56);
+    color: white;
+    align-items: center;
+}
+
+.mainHeader img{
+    max-width: 45px;
+    max-height: 45px;
+}
+
+.logo_Header{
+    position:relative;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    transition: all 200ms ease-in-out;
+
+}
+
+.logo_Header:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+
+}
+
+.logo_Header span {
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.user_Header{
+    margin-left: 15px;
+}
+
+.user_Header{
+    display: flex;
+    position: relative;
+    margin-right: 15px;
+    align-items: flex-end;
+}
+
+.texto_Userheader{
+    text-align: right;
+    margin-right: 15px;
+    margin: auto;
+}
+
+.user_Header a {
+    text-decoration: none;
+    color: white;
+    float: right;
+}
+
+.goToPerfil_Header {
+    font-weight: 600;
+}
+
+.userPhoto_Header{
+    border-radius: 50%;
+    max-width: 50px;
+    max-height: 50px;
+    margin-left: 15px;
+}
+
+.restoWeb{
+    padding: 30px;
+}
+
+.activityContainer{
+    background-color: white;
+    overflow: hidden;
+    margin: auto;
+    width: 70%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    box-shadow: 0px 3px 0px 0px rgb(152,63,246);
+}
+
+.headerActivity{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Actividad_OtraInfo{
+    text-align: right;
+    margin-top: 8px;
+    width: 100%;
+    margin-top: 30px;
+    margin-right: 10px;
+    padding: 5px;
+    color: white;
+}
+
+.Actividad_InfoPies {
+    background: linear-gradient(132deg, rgb(86, 12, 164) 10%, rgb(9, 24, 56));     
+    border-radius: 3px;
+    text-align: right;
+    transition: all 150ms ease-in-out;
+    padding: 5px;
+    margin-top: 30px;
+}
+
+.Actividad_InfoDinero:hover{
+    background: linear-gradient(132deg, rgb(63, 9, 120) 10%, rgb(6, 17, 39));     
+}
+
+.Actividad_InfoPies:hover{
+    background: linear-gradient(132deg, rgb(63, 9, 120) 10%, rgb(6, 17, 39));     
+
+}
+
+.Actividad_InfoDinero{
+    background: linear-gradient(132deg, rgb(86, 12, 164) 10%, rgb(9, 24, 56));     
+    border-radius: 3px;
+    text-align: center;
+    transition: all 150ms ease-in-out;
+    padding: 5px;
+    text-align: right;
+    position: relative;
+    margin-top: 30px;
+    color: white;
+}
+
+
+
+.filtrosActividad {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.filtrosActividad li{
+    color: white;
+    margin-left: 5px;
+    padding: 5px;
+    background: linear-gradient(132deg, rgb(86, 12, 164) 10%, rgb(9, 24, 56));     
+    border-radius: 3px;
+    text-align: center;
+    transition: all 150ms ease-in-out;
+} 
+
+
+.filtrosActividad li:hover{
+    transform: translateY(-2px);
+    background: linear-gradient(132deg, rgb(63, 9, 120) 10%, rgb(6, 17, 39));     
+
+} 
+
+
+
+.photoContainer img{
+    height: 100%;
+    border-top-left-radius: 10px;
+    max-height: 275px;
+}
+
+.TextoContainer{
+    margin-left: 20px;
+    width: 100%;
+    text-align: left;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+.Titulo_Text{
+    text-align: left;
+}
+
+.Titulo_Text h1{
+    color: rgb(9, 24, 56);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 800; 
+}
+
+.Descripcion_Text{
+    color: rgb(9, 24, 56);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.Descripcion_Text p{
+    text-align: left;
+    display: inline;
+}
+
+
+.informationContainer{
+    width: 70%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+}
+
+.PanelIzquierdo{
+    width: 40%;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 3px 0px 0px rgb(152,63,246);
+
+}
+
+.PanelDerecho{
+    margin-left: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 80%;
+    position: relative;
+}
+
+.panelMapa{
+    width: 200px;
+}
+
+.mapa{
+    width: 100%;
+}
+
+.Ubi{
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+.addComentContainer{
+    padding: 10px;
+    border-radius: 5px;
+    background: linear-gradient(132deg, rgb(86, 12, 164) 10%, rgb(9, 24, 56));     
+    color: white;
+    margin-left: 40px;
+}
+
+.containerComentarios{
+    margin-top: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.comentarioInput {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: justify;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+
+}
+
+
+
+.Button{
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 3px;
+    font-family: 'Oxygen';
+    text-align: center;
+    transition: all 100ms ease-in-out;
+}
+
+.Button:hover{
+    background-color: rgb(48, 9, 90);
+    cursor: pointer;
+    color: white;
+}
+
+.listaComentarios{
+    list-style: none;
+    padding-right: 15px ;
+}
+
+
+.commentHeader{
+    background: linear-gradient(132deg, rgb(86, 12, 164) 10%, rgb(9, 24, 56));     
+    color: white;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.listaComentarios li{
+    margin: auto;
+    position: relative;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.piesesito{
+    margin: 5px;
+}
+
+.commentText{
+    text-align: justify;
+    display: inline-block;
+    padding: 5px;
+}
+
+.commentHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.usernameComent:hover{
+    cursor: pointer;
+}
+
+.goToPerfil_Header:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,2 @@
+1. El usuario enviara los datos por medio de la interfaz de la app, desde aquí se consulta en la base si el sitio ya esta agregado o no, el cual más tarde se envía a la bandeja de entrada de solicitudes que más tarde se administrará
+2. Si ya esta agregado se le dice al usuario que ese sitio ya esta.

@@ -1,0 +1,3 @@
+El usuario inicia sesión en la app para añadir un nuevo lugar en el que ha estado,
+la app le proporciona un formulario y cuando este lo rellena el administrador decide
+si aceptar o no la sugerencia. Si es aceptada, la app crea el nuevo lugar.

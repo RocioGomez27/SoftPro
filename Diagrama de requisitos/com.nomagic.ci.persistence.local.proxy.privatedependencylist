@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<snapshot:PrivateDependenciesContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:snapshot="http://www.nomagic.com/ns/cameo/client/snapshot/1.0" xmi:id="_XfkCsAJHEeKcqJgnVU4y2Q">
+  <referencedResources xmi:id="_aiWuYMbZEeyJgLumGgzmFg" originalResourceURI="local:/PROJECT-a41b883ce47fc196ccde4b80ff2a60?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <referencedObjects>rimvydas_1048688023274_104450_1422</referencedObjects>
+  </referencedResources>
+  <referencedResources xmi:id="_aiWuYcbZEeyJgLumGgzmFg" originalResourceURI="local:/PROJECT-44c6cada-9fb8-47ce-870b-ae4ade676e5d?resource=com.nomagic.magicdraw.uml_umodel.model">
+    <referencedObjects>eee_1045467100313_135436_1</referencedObjects>
+  </referencedResources>
+  <referencedResources xmi:id="_aiWuYsbZEeyJgLumGgzmFg" originalResourceURI="local:/PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <referencedObjects>_17_0_2beta_1_8ba0276_1328170763457_888031_1701</referencedObjects>
+    <referencedObjects>_9_0_62a020a_1105704885473_18793_7971</referencedObjects>
+    <referencedObjects>_19_0beta_9250292_1504527525562_901741_4507</referencedObjects>
+    <referencedObjects>_16_8beta_8f90291_1257437081585_416419_357</referencedObjects>
+    <referencedObjects>_9_0_62a020a_1105704885343_144138_7929</referencedObjects>
+    <referencedObjects>_11_5_be00301_1151908343499_741165_181</referencedObjects>
+    <referencedObjects>_16_8beta_8f90291_1257437092398_382439_358</referencedObjects>
+    <referencedObjects>_9_0_be00301_1108044380615_150487_0</referencedObjects>
+    <referencedObjects>_19_0_8760276_1515156810551_352594_4505</referencedObjects>
+    <referencedObjects>_9_0_be00301_1108053761194_467635_11463</referencedObjects>
+    <referencedObjects>_16_8beta_8f90291_1257437071444_951720_356</referencedObjects>
+    <referencedObjects>_16_8beta_8f90291_1257436991037_310117_355</referencedObjects>
+    <referencedObjects>_16_8beta_8ca0285_1257244649124_794756_344</referencedObjects>
+    <referencedObjects>_12_0EAPbeta_be00301_1157701592996_757940_745</referencedObjects>
+    <referencedObjects>_16_8beta_8f90291_1257409433754_781066_346</referencedObjects>
+    <referencedObjects>_16_8beta_8f90291_1257437119898_153821_359</referencedObjects>
+    <referencedObjects>_11_5_be00301_1151908232109_493412_157</referencedObjects>
+    <referencedObjects>_be00301_1077726770128_871366_1</referencedObjects>
+    <referencedObjects>_11_5EAPbeta_be00301_1148632817486_155219_3</referencedObjects>
+    <referencedObjects>_11_5EAPbeta_be00301_1149081298590_692729_1</referencedObjects>
+    <referencedObjects>_be00301_1073306188629_537791_2</referencedObjects>
+    <referencedObjects>_be00301_1073394345322_922552_1</referencedObjects>
+    <referencedObjects>_16_8beta_8f90291_1257409433754_907450_344</referencedObjects>
+    <referencedObjects>_9_0_62a020a_1105704920340_825592_9329</referencedObjects>
+    <referencedObjects>magicdraw_uml_standard_profile_v_0001</referencedObjects>
+  </referencedResources>
+</snapshot:PrivateDependenciesContainer>

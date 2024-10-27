@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<snapshot:SnapshotInfoContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:snapshot="http://www.nomagic.com/ns/cameo/client/snapshot/1.0" xmi:id="_w_oCgJnOEeG5IL63JP9cFw">
+  <snaphotDescriptors xmi:id="_xwW74JnOEeG5IL63JP9cFw" originalResourceURI="local:/PROJECT-5d6756d4ab7fcc1b9be2b6b7ce3f4f23?resource=com.nomagic.magicdraw.uml_umodel.model"/>
+  <snaphotDescriptors xmi:id="_xwW74ZnOEeG5IL63JP9cFw" originalResourceURI="local:/PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>magicdraw_uml_standard_profile_v_0001</sharePointObjects>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_F0tEUJMhEeSEyaDgssVFvQ" originalResourceURI="local:/PROJECT-e5d9b768-419d-4a6c-b277-b8a25c6debfd?resource=com.nomagic.magicdraw.uml_umodel.model"/>
+  <snaphotDescriptors xmi:id="_jA7IoBAtEeWb6bxIyinv1Q" originalResourceURI="local:/PROJECT-48d0af3d-6701-4cb5-93f3-79a5e41ac7f2?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>_18_1_8e30282_1427719665812_743806_5230</sharePointObjects>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_rHMpQDG2EeyF2O1fvJoc_w" originalResourceURI="local:/PROJECT-44c6cada-9fb8-47ce-870b-ae4ade676e5d?resource=com.nomagic.magicdraw.uml_umodel.model"/>
+  <snaphotDescriptors xmi:id="_WDpVs007EeyegqkGggBRyw" originalResourceURI="local:/PROJECT-a41b883ce47fc196ccde4b80ff2a60?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>rimvydas_1048688023274_104450_1422</sharePointObjects>
+  </snaphotDescriptors>
+</snapshot:SnapshotInfoContainer>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ASCII"?>
+<project:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:project="http://www.nomagic.com/ns/cameo/client/project/1.0" xmi:id="_itfPQRAtEeWb6bxIyinv1Q" description="" id="PROJECT-48d0af3d-6701-4cb5-93f3-79a5e41ac7f2">
+  <ownedSections xmi:id="_ituf0RAtEeWb6bxIyinv1Q" name="shared_model" shared="true" featuredBy="_ituf0BAtEeWb6bxIyinv1Q">
+    <sharePoints xmi:id="_itvt8RAtEeWb6bxIyinv1Q" ID="_itvt8BAtEeWb6bxIyinv1Q">
+      <object href="PROJECT-48d0af3d-6701-4cb5-93f3-79a5e41ac7f2?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_18_1_8e30282_1427719665812_743806_5230"/>
+      <options xmi:id="_itvt8hAtEeWb6bxIyinv1Q" key="preferredPath" value="::"/>
+    </sharePoints>
+  </ownedSections>
+  <ownedSections xmi:id="_itvt9BAtEeWb6bxIyinv1Q" name="commonprojectoptions" shared="true" featuredBy="_itvt8xAtEeWb6bxIyinv1Q"/>
+  <ownedSections xmi:id="_itwVAxAtEeWb6bxIyinv1Q" name="personalprojectoptions" shared="true" belongsTo="_itwVAhAtEeWb6bxIyinv1Q" featuredBy="_itvt8xAtEeWb6bxIyinv1Q"/>
+  <ownedSections xmi:id="_i8q6wBAtEeWb6bxIyinv1Q" name="model" featuredBy="_ituf0BAtEeWb6bxIyinv1Q"/>
+  <userParts xmi:id="_itwVAhAtEeWb6bxIyinv1Q" user="_itwVARAtEeWb6bxIyinv1Q" sections="_itwVAxAtEeWb6bxIyinv1Q"/>
+  <projectUsages xmi:id="_ivD8kBAtEeWb6bxIyinv1Q" usedProjectURI="file:/C:/Program%20Files/MagicDraw/profiles/UML_Standard_Profile.mdzip" reshared="true" readonly="true" preferredProjectRepositoryType="" loadedAutomatically="true" withPrivateDependencies="true">
+    <usedProject href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.ci.metamodel.project#_VWTUgU_TEeCNOP_jel_PNg"/>
+    <mountPoints xmi:id="_ivEjoBAtEeWb6bxIyinv1Q" sharePointID="magicdraw_uml_standard_profile_v_0001" containmentFeatureID="61" featureName="UML Model" containmentIndex="-1" containmentFeatureName="packagedElement">
+      <mountedPoint href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#magicdraw_uml_standard_profile_v_0001"/>
+      <mountedOn href="PROJECT-48d0af3d-6701-4cb5-93f3-79a5e41ac7f2?resource=com.nomagic.magicdraw.uml_umodel.model#_18_2_8e8028e_1434022350957_864139_5498"/>
+      <options xmi:id="_l6IeIGtQEeiinMeBDCzUeQ" key="preferredPath" value="::"/>
+      <mountedSharePoint href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.ci.metamodel.project#_VbhywE_TEeCNOP_jel_PNg"/>
+    </mountPoints>
+    <properties xmi:id="_ivD8kRAtEeWb6bxIyinv1Q" key="LOCAL_PROJECT_ID" value="PROJECT-877558e9224f114d50dea1f39a1c119"/>
+    <properties xmi:id="_ivD8khAtEeWb6bxIyinv1Q" key="usedVersion" value="19.0"/>
+  </projectUsages>
+  <features xmi:id="_ituf0BAtEeWb6bxIyinv1Q" name="UML Model" namespace="com.nomagic.magicdraw.uml_model" version="17.0" sections="_ituf0RAtEeWb6bxIyinv1Q _i8q6wBAtEeWb6bxIyinv1Q" internalVersion="1"/>
+  <features xmi:id="_itvt8xAtEeWb6bxIyinv1Q" name="Project Options" namespace="com.nomagic.magicdraw.core.project.options" version="1.0" sections="_itvt9BAtEeWb6bxIyinv1Q _itwVAxAtEeWb6bxIyinv1Q" internalVersion="1"/>
+  <features xmi:id="_ivL4YBAtEeWb6bxIyinv1Q" name="Language Properties" namespace="com.nomagic.magicdraw.ce.languageproperties" version="1.0" internalVersion="1"/>
+  <features xmi:id="_ivL4YRAtEeWb6bxIyinv1Q" name="Code Engineering" namespace="com.nomagic.magicdraw.ce" version="1.0" internalVersion="1"/>
+  <properties xmi:id="_i8oegBAtEeWb6bxIyinv1Q" key="fileFormatVersion" value="18.1 beta.esi"/>
+  <properties xmi:id="_i8pFkBAtEeWb6bxIyinv1Q" key="fileVersion" value="45"/>
+  <properties xmi:id="_i8rh0BAtEeWb6bxIyinv1Q" key="MODEL_ROOT_HREF" value="local:/PROJECT-48d0af3d-6701-4cb5-93f3-79a5e41ac7f2?resource=com.nomagic.magicdraw.uml_umodel.model#_18_2_8e8028e_1434022350957_864139_5498"/>
+  <properties xmi:id="_i9XeUBAtEeWb6bxIyinv1Q" key="MODULES_DIRS" value="&lt;project.dir>&lt;>&lt;install.root>\profiles&lt;>&lt;install.root>\modelLibraries"/>
+  <properties xmi:id="_i-xMgBAtEeWb6bxIyinv1Q" key="CI_VERSION" value="V1702_SP1"/>
+  <properties xmi:id="_AvuhgBD3EeW1S_WC3aC2eQ" key="exporterDescription" value="ac ed 0 5 73 72 0 2e 63 6f 6d 2e 6e 6f 6d 61 67 69 63 2e 70 65 72 73 69 73 74 65 6e 63 65 2e 58 6d 69 45 78 70 6f 72 74 65 72 44 65 73 63 72 69 70 74 69 6f 6e f5 3e fd c8 e7 3c 3b d7 2 0 5 4c 0 5 6d 4e 61 6d 65 74 0 12 4c 6a 61 76 61 2f 6c 61 6e 67 2f 53 74 72 69 6e 67 3b 4c 0 12 6d 52 65 71 75 69 72 65 64 50 6c 75 67 69 6e 4d 61 70 74 0 f 4c 6a 61 76 61 2f 75 74 69 6c 2f 4d 61 70 3b 4c 0 12 6d 52 65 71 75 69 72 65 64 52 65 73 6f 75 72 63 65 73 74 0 10 4c 6a 61 76 61 2f 75 74 69 6c 2f 4c 69 73 74 3b 4c 0 10 6d 55 4d 4c 4e 61 6d 65 73 70 61 63 65 55 52 49 71 0 7e 0 1 4c 0 8 6d 56 65 72 73 69 6f 6e 71 0 7e 0 1 78 70 74 0 d 4d 61 67 69 63 44 72 61 77 20 55 4d 4c 73 72 0 11 6a 61 76 61 2e 75 74 69 6c 2e 48 61 73 68 4d 61 70 5 7 da c1 c3 16 60 d1 3 0 2 46 0 a 6c 6f 61 64 46 61 63 74 6f 72 49 0 9 74 68 72 65 73 68 6f 6c 64 78 70 3f 40 0 0 0 0 0 0 77 8 0 0 0 10 0 0 0 0 78 73 72 0 13 6a 61 76 61 2e 75 74 69 6c 2e 41 72 72 61 79 4c 69 73 74 78 81 d2 1d 99 c7 61 9d 3 0 1 49 0 4 73 69 7a 65 78 70 0 0 0 0 77 4 0 0 0 0 78 70 74 0 7 31 39 2e 30 20 76 39 "/>
+  <properties xmi:id="_2lhP4G6DEeWdDqx_DKXHjA" key="saveID" value="f28cea48-30c9-4344-9daa-4bdbc35899aa"/>
+  <properties xmi:id="_H7tsMJq6Eealg7iKNamZlQ" key="internalVersion" value="19.0"/>
+  <properties xmi:id="_Inf0IJq6Eealg7iKNamZlQ" key="standardProfile" value="true"/>
+  <projectUsers xmi:id="_itwVARAtEeWb6bxIyinv1Q" userId="default"/>
+</project:Project>

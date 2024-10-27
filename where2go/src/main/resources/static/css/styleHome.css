@@ -1,0 +1,445 @@
+body{
+    margin: 0;
+    font-family: 'Oxygen';
+	background: rgb(152,63,246);
+    background: linear-gradient(90deg, rgba(152,63,246) 10%, #01bceb);     
+    height: fit-content;
+}
+
+
+
+.notLoggedIn{
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    color: white;
+
+}
+
+.notLoggedIn a {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 5px;
+    color: #01bceb;
+}
+
+.notLoggedIn a:hover {
+    background-color: rgb(206, 206, 206);
+
+}
+
+.mainHeader{
+    overflow: hidden;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(9, 24, 56);
+    color: white;
+    align-items: center;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    width: 100%;
+}
+
+.mainHeader img{
+    max-width: 45px;
+    max-height: 45px;
+}
+
+.logo_Header{
+    position:relative;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    transition: all 200ms ease-in-out;
+
+}
+
+.logo_Header:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.logo_Header span {
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+
+
+.user_Header{
+    margin-left: 15px;
+}
+
+.user_Header{
+    display: flex;
+    position: relative;
+    margin-right: 15px;
+    align-items: flex-end;
+}
+
+.texto_Userheader{
+    text-align: right;
+    margin-right: 15px;
+    margin: auto;
+}
+
+.user_Header a {
+    text-decoration: none;
+    color: white;
+    float: right;
+}
+
+.goToPerfil_Header {
+    font-weight: 600;
+}
+
+.goToPerfil_Header:hover {
+    cursor: pointer;
+}
+
+.userPhoto_Header{
+    border-radius: 50%;
+    max-width: 50px;
+    max-height: 50px;
+    margin-left: 15px;
+}
+
+
+.resto_Web{
+    position: relative;
+    max-height: max-content;
+    display: flex;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.contenedorIzq{
+    display: flex;
+    max-width: 35%;
+    margin-left: 10%;
+}
+
+.Panel{
+    font-family: 'Oxygen';
+    background-color: rgb(9, 24, 56);
+    max-width: fit-content;
+    margin: auto;
+    margin-top: 15%;
+    text-align: left;
+    color: white;
+    border-radius: 15px;
+}
+
+.panel_Header{
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+hr {
+    border: 1px solid rgba(152,63,246,0.3);
+    max-width: 90%;
+}
+
+.byType{
+    margin-top: -30px;
+    padding: 30px;
+}
+
+.typeText{
+    margin: auto;
+}
+
+.byType ul{
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    padding: 0;
+    list-style-type: none;
+}
+
+.byType li{
+    margin: 5px;
+    padding: 10px;
+    background-color: rgba(152,63,246,0.3);
+    border-radius: 3px;
+    transition: all 200ms ease-in-out;
+    text-align: center;
+}
+
+.filterType[type="checkbox"] {
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    -o-appearance:none;
+    border: none;
+    outline: none;
+}
+
+.filterType[type="checkbox"]:checked::after{
+    background-color: rgba(152,63,246,0.5);
+}
+
+
+
+.byType li:hover{
+    background-color: rgba(152,63,246,0.5);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+.byPrices ul{
+    list-style: none;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+.byPrices li{
+    padding: 15px;
+    background-color: rgba(152,63,246,0.3);
+    border-radius: 3px;
+    transition: all 0.3ms ease-in-out;
+    text-align: center;
+    margin: auto;
+}
+
+
+.byPrices li:hover{
+    background-color: rgba(152,63,246,0.5);
+    cursor: pointer;
+}
+
+
+.rangoKms{
+    padding: 30px;
+    color: white;
+    margin: auto;
+    outline: none;
+    border: none;
+}
+
+
+.inputKms::placeholder {
+    color: white;
+    text-align: center;
+}
+
+input[type=text]{
+    background: rgba(152,63,246,0.3);
+    width: 100%;
+    padding: 10px 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: 'Oxygen';
+    text-align: left;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.aplicarFiltroContainer{
+    padding: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+.boton_Filtros{
+    text-align: center;
+    background-color: rgba(152,63,246,0.3);
+    margin: auto;
+    padding: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 3px;
+    transition: all 200ms ease-in-out;
+}
+
+.boton_Filtros:hover{
+    background-color: rgba(152,63,246,0.5);
+    cursor: pointer;
+    transform: scale(1.05);
+
+}
+
+.Panel_Derecho {
+    position: relative;
+    margin-left: 10%;
+}
+
+.Actividad_imagen{
+    float: left;
+    justify-content: center;
+}
+
+.Actividad_imagen > img{
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    position: relative;
+    max-width: 150px;
+    max-height: 110px;
+}
+
+.Actividad_texto {
+    color: white;
+    margin-left: 20px;
+    max-width: 60%;
+    text-align: left;
+}
+
+.Actividad_texto h2 {
+    position: relative;
+    margin: 0;
+}
+
+.Actividad_texto label {
+    position: relative;
+    margin: 0;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 3px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    display: inline-block;
+    text-align: justify;
+}
+
+.Actividad{
+    display: flex;
+    margin: auto;
+}
+
+.Actividad_bloque {
+    text-align: center;
+    display: flex;
+    overflow: hidden;
+    background-color: rgb(9, 24, 56);
+    padding: 15px 15px;
+    height: fit-content;
+    border-radius: 10px;
+    margin: 20px 40px;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+    max-height: 200px;
+    position: relative;
+    transition: all 300ms ease-in-out;
+
+}
+
+.Actividad_bloque:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    background: linear-gradient(132deg, rgb(86, 12, 164) 10%, rgb(9, 24, 56));     
+
+}
+
+.ListadoActividades ul {
+    list-style: none;
+    margin-top: 15px;
+    float: right;
+}
+
+.PanelActividades{
+    align-items: center;
+    justify-items: center;
+    max-height: max-content;
+    position: absolute;
+}
+
+.Actividad_OtraInfo{
+    text-align: right;
+    margin-top: 8px;
+    width: 100%;
+    position: relative;
+    float: right;
+}
+
+
+.filtrosActividad{
+    display: flex;    
+}
+
+.Actividad_InfoPies {
+    background-color: rgba(152,63,246,0.3);
+    border-radius: 3px;
+    padding: 5px;
+    text-align: right;
+}
+
+.Actividad_InfoDinero{
+    background-color: rgba(152,63,246,0.3);
+    border-radius: 3px;
+    padding: 5px;
+    text-align: right;
+    position: relative;
+    margin-top: 30px;
+}
+
+.filtrosActividad li{
+    color: white;
+    margin-left: 5px;
+    padding: 5px;
+    background-color: rgba(152,63,246,0.3);
+    border-radius: 3px;
+    text-align: center;
+} 
+
+.ContainerFiltros{
+    text-align: left    ;
+}
+
+
+
+.rangeBar{
+    margin: auto;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+}
+
+.barR[type="range"] {
+    -webkit-appearance: none;
+    margin-right: 15px;
+    width: 150px;
+    height: 7px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    background-image: linear-gradient(132deg, rgb(86, 12, 164) 10%, rgb(9, 24, 56));
+    background-repeat: no-repeat;
+  }
+
+.barR[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: rgb(152,63,246);
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+
+}
+
+.barR[type="range"]::-webkit-slider-runnable-track{
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

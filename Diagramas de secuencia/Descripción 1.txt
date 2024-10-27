@@ -1,0 +1,3 @@
+El usuario accede al lugar visitado recientemente y en el apartado de valoraciones y comentarios dejara sus respectivas opiniones
+sobre el lugar, siendo la valoración permitida de 1 a 5.
+Si hay algún error de formato como que el usuario intente añadir un comentario vacio, este se descartará

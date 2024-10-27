@@ -1,0 +1,2 @@
+El usuario pedirá al ActividadController que obtenga las actividades, solicitando a ActividadService que el repositorio de actividades (ActividadRepository) le devuelva un conjunto de actividades que cumplan el filtro elegido por el usuario, en este caso cumpliendo el requerimiento de que sea apto para ese día.
+Si el conjunto devuelto es vacío, se mostrará un error por pantalla pero si por el contrario hay elementos, se mostraran en ella.

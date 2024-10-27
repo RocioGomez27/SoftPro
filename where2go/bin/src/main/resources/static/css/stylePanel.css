@@ -1,0 +1,245 @@
+/*Azul: #00E8FA; */
+
+body{
+    font-family: 'Oxygen';
+    margin: 0;
+    background: rgb(152,63,246);
+    background: linear-gradient(90deg, rgba(152,63,246) 10%, #01bceb);    
+    height: fit-content;
+}
+
+.Header {
+    overflow: hidden;
+    background: linear-gradient(252deg, rgb(152,63,246) 5%,  rgb(43, 16, 71));    
+    padding: 5px 20px;
+    justify-content: space-between;
+    width: 30%;
+    position: fixed;
+    display: flex;
+    margin: 30px 30px;
+    border-radius: 10px;
+    z-index: 50;
+    top: 0;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    
+    
+}
+
+.Header h3 {
+    float: left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+    padding: 10px;
+    
+}
+
+
+.Header h3:hover {
+    cursor: pointer;
+}
+
+
+
+.restBody {
+    padding: 30px 20px;
+    overflow: hidden;
+}
+
+.addContainer {
+    padding: 20px 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.AddButton {
+    margin: auto;
+    width: fit-content;
+}
+
+.AddButton > a {
+    color: white;
+    background-color: rgb(9, 24, 56);
+    border-radius: 5px;
+    padding: 20px 20px;
+    transition: all .2s ease-in-out ;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.AddButton > a:hover {
+    background-color: rgb(9, 24, 56);
+    cursor: pointer;
+}
+
+
+
+.BuscarActividad{
+    padding: 25px 25px;
+    margin: 20px 40px;
+    font-family: 'Oxygen';
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+
+#boton_buscar {
+    color: white;
+    background-color: rgb(9, 24, 56);
+    border-radius: 3px;
+    padding: 10px 10px;
+    transition: all .2s ease-in-out ;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+}
+
+#boton_buscar:hover {
+    background-color: rgb(9, 24, 56);
+    cursor: pointer;
+}
+
+.inputBusqueda{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background-color: rgb(9, 24, 56);
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 10px 10px;
+    margin-left: 10px;
+    font-family: 'Oxygen';
+
+}
+
+.inputBusqueda::placeholder{
+    text-align: center;
+    color: white;
+    font-style: italic;
+    
+}
+
+
+
+.ListadoActividades{
+    justify-items: center;
+}
+
+.Actividad_bloque {
+    text-align: center;
+    display: flex;
+    overflow: hidden;
+    background-color: rgb(9, 24, 56);
+    padding: 15px 15px;
+    height: fit-content;
+    border-radius: 10px;
+    margin: 20px 40px;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+    max-height: 200px;
+    position: relative;
+
+}
+
+.Actividad_imagen{
+    float: left;
+    justify-content: center;
+}
+
+.Actividad_imagen > img{
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    position: relative;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.Actividad_texto {
+    color: white;
+    margin-left: 30px;
+    max-width: 30%;
+    text-align: left;
+}
+
+
+
+.Actividad_texto h2 {
+    position: relative;
+    margin: 0;
+}
+
+.Actividad_texto label {
+    position: relative;
+    margin: 0;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0px 5px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+}
+
+.Actividad{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.Actividad_Acciones {
+    justify-content: space-between;
+    position: relative;
+    display: flex;
+    padding: 10px 10px;
+    margin: auto;
+    text-align: left;
+}
+
+
+.edit_delete {
+    color: white;
+    background-color: rgb(9, 24, 56);
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px 15px;
+    font-weight: lighter;
+    margin: 0px 0px 10px 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: all .2s ease-in-out ;
+    text-decoration: none;
+}
+
+.edit_delete:hover {
+    background-color: rgb(9, 24, 56);
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+
+.Actividad_InfoExtra{
+    color: white;
+    text-align: right;
+}
+
+.Actividad_Info {
+    padding: 5px 5px;
+    font-weight: normal;
+    position: relative;
+    margin: 0;
+    text-align: right;
+    padding-left: 20px;
+
+}

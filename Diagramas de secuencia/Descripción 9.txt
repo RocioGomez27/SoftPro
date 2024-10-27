@@ -1,0 +1,3 @@
+1. Es un bucle, el moderador solicita el primer mensaje de la bandeja de entrada, esta se la devuelve, el administrador comprueba si es valida, la implementa en los datos, devuelve que todo esta correcto.
+2. Si no es correcta no se agrega y se le envía un mensaje al usuario sobre el motivo.
+3. Si no hay suficiente espacio se le dice al moderador

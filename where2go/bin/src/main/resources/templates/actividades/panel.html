@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen">
+    <link rel="stylesheet" href="" th:href="@{/css/stylePanel.css}"/>
+    
+    <link rel="icon" th:href="@{/images/logo.png}" type="image/png" sizes="256x389">
+
+
+    <title>Where2Go - Panel</title>
+</head>
+<body>
+    <header class="Header">
+        <h3 onclick="window.location = '/actividades/panel/'" class="Title">Panel de Actividades - [Administrador]</h3>
+        <br>
+        <h3 class="cerrarSesion" onclick="window.location = '/home'">Cerrar Sesión</h3>
+    </header>
+
+
+    <div class="restBody">
+        <div class="addContainer">
+            <div class="AddButton">
+                <a class="button" th:href="@{/actividades/panel/add}"> Añadir nueva actividad </a>
+            </div>
+        </div>
+
+        <div class="BuscarActividad">
+            <form id="form" method="get">
+                <input required class="inputBusqueda" placeholder="Buscar por nombre" onchange="document.getElementById('form').action = '/actividades/panel/search/' + this.value "/>
+                <input id="boton_buscar" type="submit" value="Buscar"></input>
+            </form>         
+        </div>
+
+        <div class="ListadoActividades">
+            <ul>
+                <li>
+                    <div th:each="actividad : ${listaActividades}" class="Actividad">
+                        <div class="Actividad_bloque">
+                            <div class="Actividad_imagen">
+                                <img th:if="${actividad.ImageUrl} != NULL" th:src="'https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=' + ${actividad.ImageUrl} + '&key=AIzaSyC9pH40cKVvwzNyOWVsoY6Kq47xsO0_B30'">
+                                <img th:if="${actividad.ImageUrl} == NULL" th:src="@{/images/NoImageAvaliable.png}">
+
+                            </div>
+                            <div class="Actividad_texto">
+                                <h2 class="Actividad_titulo" th:text="${actividad.Nombre}"></h2>
+                                <label class="Actividad_desc" th:text="${actividad.Descripcion}"></label>
+                            </div>
+                            <div class="Actividad_InfoExtra">
+                                <label class="Actividad_Info" th:text="'ID: ' + ${actividad.AUID}"></label><br>
+                                <label class="Actividad_Info" th:text="'Fecha de Creación: ' + ${actividad.fechaCreacion}"></label><br>
+                                <label class="Actividad_Info" th:text="'Localización: [Latitud: ' + ${actividad.Longitud} + ', Longitud: ' + ${actividad.Latitud} + ']'"></label><br>
+                                <label class="Actividad_Info" th:text="'Valoración: ' + ${ '🦶'.repeat(actividad.Valoraciones)}"></label>
+                            </div>
+                        </div>
+                        <div class="Actividad_Acciones">
+                            <div>
+                                <a th:href="@{/actividades/panel/editar/{auid}(auid=${actividad.AUID})}" class="edit_delete"> Editar </a>
+                            </div>
+                            <div>
+                                <a th:href="@{/actividades/panel/borrar/{auid}(auid=${actividad.AUID})}" class="edit_delete"> Borrar </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

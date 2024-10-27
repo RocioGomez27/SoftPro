@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen">
+    <link rel="stylesheet" th:href="@{/css/styleAdd.css}"/>
+    <link rel="icon" th:href="@{/images/logo.png}" type="image/png" sizes="256x389">
+
+    <title>Where2Go - Panel</title>
+</head>
+<body>
+    <header class="Header">
+        <h3 onclick="window.location = '/actividades/panel/'" class="Title">Panel de Actividades</h3>
+        <div class="UserLog">
+            <h3> Logeado como Admin </h3>
+        </div>
+    </header>
+
+    <div class="Resto">
+        <div th:switch="${actividad.AUID}"class="cajaInputs">
+            <h3 th:case="null" class="Titulo">Insertar nueva actividad</h3>
+            <h3 th:case="*" th:text="'Editando [ID = ' + ${actividad.AUID} + ']'"class="Titulo"></h3>
+
+            <hr/>
+
+            <form class="formulario" th:action="@{/actividades/panel/save}" method="post" th:object="${actividad}">
+                
+                <input required type="hidden" id="id" th:field="*{AUID}">
+                <input th:if="${FechaDeCreacion != null}" required  type="hidden" id="fecha" th:field="*{fechaCreacion}" th:value="${FechaDeCreacion}">
+                
+                <div class="Campo">
+                    <label for="Nombre"> Nombre: </label>
+                    <input required class="inputX" type="text" th:field="*{Nombre}">
+                </div>
+                <div class="Campo">
+                    <label for="Descripcion"> Descripcion: </label>
+                    <input required class="inputX" type="text" th:field="*{Descripcion}">
+                </div>
+
+                <div class="Campo">
+                    <label for="Valoracion"> Valoracion: </label>
+                    <input required class="inputX" type="text" th:field="*{Valoraciones}">
+                </div>
+
+                <div class="Campo">
+                    <label for="Precio"> Precio: </label>
+                    <input required class="inputX" type="text" th:field="*{precio}">
+                </div>
+
+
+
+                <div class="Campo">
+                    <label for="Latitud"> Latitud: </label>
+                    <input required class="inputX" type="text" th:field="*{Latitud}">
+
+                    <label for="Longitud"> Longitud: </label>
+                    <input required class="inputX" type="text" th:field="*{Longitud}">
+                </div>
+
+                <div class="Campo">
+                    <label for="ImageUrl"> ImageURL: </label>
+                    <input  class="inputX" type="text" th:field="*{ImageUrl}">
+                </div>
+                <div class="Campo">
+                    <label for="naturaleza"> Naturaleza: </label>
+                    <input  class="inputX" type="checkbox" th:field="*{naturaleza}">
+                </div>
+				
+				<div class="Campo">
+                    <label for="restaurantes"> Restaurantes: </label>
+                    <input  class="inputX" type="checkbox" th:field="*{restaurante}">
+                </div>
+                
+                <div class="Campo">
+                    <label for="tiendas"> Tiendas: </label>
+                    <input  class="inputX" type="checkbox" th:field="*{tienda}">
+                </div>
+                
+                <div class="Campo">
+                    <label for="transporte"> Transporte: </label>
+                    <input  class="inputX" type="checkbox" th:field="*{transporte}">
+                </div>
+				
+				<div class="Campo">
+                    <label for="ocio"> Ocio: </label>
+                    <input  class="inputX" type="checkbox" th:field="*{ocio}">
+                </div>
+                
+               <div class="Campo">
+                    <label for="cultura"> Cultura: </label>
+                    <input  class="inputX" type="checkbox" th:field="*{cultura}">
+                </div>
+
+                <div class="ButtonContainer">
+                    <input th:if="${actividad.AUID} == null" class="Button" type="submit" value="Añadir" >
+                    <input th:if="${actividad.AUID} != null" class="Button" type="submit" value="Editar" >
+                </div>
+            </form>
+
+        </div>
+        
+
+    </div>
+</body>
+</html>

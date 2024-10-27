@@ -1,0 +1,7 @@
+1. El moderador pide el estado del lugar al ActividadController
+2. El Controlador pregunta por el estado al Repositorio
+3. El ActividadService consulta en el Repositorio el estado
+4. Se obtiene el estado
+5. El Controlador recibe el estado y se lo pasa al Moderador
+6. El Moderador recibe el estado y de esta manera sabe lo que tiene que hacer
+7. Si el estado es "no disponible" se borra el lugar del repositorio, sino no se hace nada

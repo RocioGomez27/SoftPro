@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen">
+    <link rel="stylesheet" href="" th:href="@{/css/styleLogin.css}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" th:href="@{/images/logo.png}" type="image/png" sizes="256x256">
+
+    <title> Where2Go Login </title>
+
+</head>
+<body>
+    <h1 class="titulo">Login</h1>
+
+    <div class="incorrectContainer" th:if="${badLogin == true}">
+        <div class="invalidLogin">
+            <h2>Credenciales incorrectas</h2>
+        </div>
+    </div>
+
+    <form th:action="@{/home}" method="post" th:object="${usuario}">  
+        <div class="container">
+            <label>Nombre de usuario: </label>
+            <input type="text" placeholder="Introduzca usuario" required th:field="*{username}">
+            <label>Contraseña: </label>
+            <input minlength="5" type="password" placeholder="Introduzca contraseña" required th:field="*{password}">
+            <div class="submitButton">
+                <button type="submit">Entrar</button>
+            </div>
+        </div>
+    </form>
+
+    <div class="go_toRegister">
+        <div>        
+            <span> ¿No tienes cuenta todavía?</span><br>
+            <a th:href="@{/register}">Registrate</a>
+        </div>
+    </div>
+
+</body>
+</html>

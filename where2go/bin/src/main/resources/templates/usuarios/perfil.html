@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen">
+    <link rel="stylesheet" href="" th:href="@{/css/stylePerfil.css}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" th:href="@{/images/logo.png}" type="image/png" sizes="256x256">
+        
+    <title>Where2Go</title>
+</head>
+<body>	
+<div th:if="${usuario} != NULL">
+    <header class="mainHeader">
+        <form th:action="@{/home/}" id="goToHome" th:object="${usuario}" method="post">
+            <input required type="hidden" id="username" th:field="*{username}" th:value="${usuario.username}">
+            <input required type="hidden" id="password" th:field="*{password}" th:value="${usuario.password}">
+
+            <div class="logo_Header" onclick="document.getElementById('goToHome').submit();">
+                <img th:src="@{/images/logo.png}" height="80px" width="65px"/>
+                <span>Where2Go</span>
+            </div>
+        </form>
+        <div>
+            <h2 th:if="${usuario.username == usuarioPerfil.username}" th:text="'¿Qué te parece tu perfil?'"></h2>
+            <h2 th:if="${usuario.username != usuarioPerfil.username}" th:text="'Estas viendo el perfil de ' + ${usuarioPerfil.username}"></h2>
+
+        </div>
+        <div class="user_Header">
+            <div class="texto_Userheader">
+                <form th:action="@{/home/profile/{user}(user=${usuario.username})}" id="goToProfile" th:object="${usuario}" method="post">
+                    <input required type="hidden" id="uuid" th:field="*{UUID}" th:value="${usuario.UUID}">
+                    <a class="goToPerfil_Header" onclick="document.getElementById('goToProfile').submit();">Mi perfil</a>
+                </form>
+                <br>
+                <a class="cerrarSesion_Header" th:href="@{/logout}">Cerrar sesión</a>
+            </div>
+            <div class="avatar_Header">
+                <img th:if="${usuario.Avatar} != null" class="userPhoto_Header" th:src="${usuario.Avatar}" ></img>
+                <img th:if="${usuario.Avatar} == null" class="userPhoto_Header" th:src="@{/images/defaultAvatar.png}"></img>
+            </div>
+        </div>
+    </header>
+		 
+    <div class="resto_Web">
+
+        <div class="profileCard">
+            <div class="avatarContainer">
+                <img  th:if="${usuarioPerfil.Avatar} != null" class="userPhoto_Body" th:src="${usuarioPerfil.Avatar}" ></img>
+                <img  th:if="${usuarioPerfil.Avatar} == null" class="userPhoto_Body" th:src="@{/images/defaultAvatar.png}"></img>
+            </div>
+
+            <div class="InformationContainer">
+                <div class="Username">
+                    <h2 class="usernameData" th:text="${usuarioPerfil.username}"></h2>
+                    <h2 class="staffText" th:if="${usuarioPerfil.esAdmin == true}">👑 ADMINISTRADOR 👑</h2>
+                    <h2 class="staffText" th:if="${usuarioPerfil.esModerador == true}">🛡️ MODERADOR 🛡️</h2>
+                </div>
+
+                <div class="Nombre">
+                    <span>Nombre y Apellidos: <span class="infoData" th:text="${usuarioPerfil.Nombre}  + ' ' + ${usuarioPerfil.Apellido}"></span></span>
+                </div>
+
+                <div class="Edad">
+                    <span>Edad: <span class="infoData" th:text="${usuarioPerfil.Edad}"></span></span>
+                </div>
+
+                <div class="Contacto">
+                    <span>Contacto: <span class="infoData" th:text="${usuarioPerfil.email}"></span></span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+		
+
+</div>
+
+</body>
+</html>

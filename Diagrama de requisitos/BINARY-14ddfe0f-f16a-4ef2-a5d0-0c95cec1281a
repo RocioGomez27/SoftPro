@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<mdOwnedViews>
+	<mdElement elementClass='DiagramFrame' xmi:id='_19_0_4_8280264_1650801495494_77754_5016'>
+		<elementID xmi:idref='_19_0_4_8280264_1650801495417_938509_4994'/>
+		<geometry>5, 5, 1486, 548</geometry>
+		<compartment compartmentID='TAGGED_VALUES'/>
+		<mdOwnedViews/>
+	</mdElement>
+	<mdElement elementClass='Class' xmi:id='_19_0_4_8280264_1650801796521_222152_5029'>
+		<elementID xmi:idref='_19_0_4_8280264_1650801796515_963332_5028'/>
+		<geometry>147, 56, 154, 56</geometry>
+		<compartment compartmentID='TAGGED_VALUES'/>
+		<mdOwnedViews/>
+	</mdElement>
+	<mdElement elementClass='Class' xmi:id='_19_0_4_8280264_1650802235454_577185_5056'>
+		<elementID xmi:idref='_19_0_4_8280264_1650802235450_51782_5055'/>
+		<geometry>329, 56, 161, 49</geometry>
+		<compartment compartmentID='TAGGED_VALUES'/>
+		<mdOwnedViews/>
+	</mdElement>
+	<mdElement elementClass='Class' xmi:id='_19_0_4_8280264_1650802309200_502644_5083'>
+		<elementID xmi:idref='_19_0_4_8280264_1650802309197_528193_5082'/>
+		<geometry>434, 133, 168, 49</geometry>
+		<compartment compartmentID='TAGGED_VALUES'/>
+		<mdOwnedViews/>
+	</mdElement>
+	<mdElement elementClass='Class' xmi:id='_19_0_4_8280264_1650802352423_446740_5110'>
+		<elementID xmi:idref='_19_0_4_8280264_1650802352421_427027_5109'/>
+		<geometry>350, 203, 154, 49</geometry>
+		<compartment compartmentID='TAGGED_VALUES'/>
+		<mdOwnedViews/>
+	</mdElement>
+	<mdElement elementClass='Class' xmi:id='_19_0_4_8280264_1650802373927_652356_5137'>
+		<elementID xmi:idref='_19_0_4_8280264_1650802373925_36373_5136'/>
+		<geometry>91, 168, 133, 70</geometry>
+		<compartment compartmentID='TAGGED_VALUES'/>
+		<mdOwnedViews/>
+	</mdElement>
+	<mdElement elementClass='Class' xmi:id='_19_0_4_8280264_1650802412255_158101_5164'>
+		<elementID xmi:idref='_19_0_4_8280264_1650802412253_824263_5163'/>
+		<geometry>133, 329, 154, 63</geometry>
+		<compartment compartmentID='TAGGED_VALUES'/>
+		<mdOwnedViews/>
+	</mdElement>
+	<mdElement elementClass='Class' xmi:id='_19_0_4_8280264_1650802430943_659339_5191'>
+		<elementID xmi:idref='_19_0_4_8280264_1650802430941_256489_5190'/>
+		<geometry>406, 308, 119, 49</geometry>
+		<compartment compartmentID='TAGGED_VALUES'/>
+		<mdOwnedViews/>
+	</mdElement>
+	<mdElement elementClass='Class' xmi:id='_19_0_4_8280264_1650802473432_161058_5218'>
+		<elementID xmi:idref='_19_0_4_8280264_1650802473430_695772_5217'/>
+		<geometry>693, 49, 140, 56</geometry>
+		<compartment compartmentID='TAGGED_VALUES'/>
+		<mdOwnedViews/>
+	</mdElement>
+	<mdElement elementClass='Class' xmi:id='_19_0_4_8280264_1650802497471_302318_5245'>
+		<elementID xmi:idref='_19_0_4_8280264_1650802497468_430116_5244'/>
+		<geometry>917, 56, 176, 49</geometry>
+		<compartment compartmentID='TAGGED_VALUES'/>
+		<mdOwnedViews/>
+	</mdElement>
+	<mdElement elementClass='Class' xmi:id='_19_0_4_8280264_1650802682711_264745_5272'>
+		<elementID xmi:idref='_19_0_4_8280264_1650802682709_274448_5271'/>
+		<geometry>665, 168, 141, 49</geometry>
+		<compartment compartmentID='TAGGED_VALUES'/>
+		<mdOwnedViews/>
+	</mdElement>
+	<mdElement elementClass='Class' xmi:id='_19_0_4_8280264_1650802704231_660596_5299'>
+		<elementID xmi:idref='_19_0_4_8280264_1650802704229_112512_5298'/>
+		<geometry>833, 175, 119, 49</geometry>
+		<compartment compartmentID='TAGGED_VALUES'/>
+		<mdOwnedViews/>
+	</mdElement>
+	<mdElement elementClass='Class' xmi:id='_19_0_4_8280264_1650802724128_608442_5326'>
+		<elementID xmi:idref='_19_0_4_8280264_1650802724126_259124_5325'/>
+		<geometry>973, 175, 91, 56</geometry>
+		<compartment compartmentID='TAGGED_VALUES'/>
+		<mdOwnedViews/>
+	</mdElement>
+	<mdElement elementClass='Class' xmi:id='_19_0_4_8280264_1650802835663_753543_5380'>
+		<elementID xmi:idref='_19_0_4_8280264_1650802835660_477955_5379'/>
+		<geometry>784, 322, 159, 33</geometry>
+		<compartment compartmentID='TAGGED_VALUES'/>
+		<mdOwnedViews/>
+	</mdElement>
+	<mdElement elementClass='Class' xmi:id='_19_0_4_8280264_1650803024422_550709_5407'>
+		<elementID xmi:idref='_19_0_4_8280264_1650803024420_967720_5406'/>
+		<geometry>980, 385, 136, 33</geometry>
+		<compartment compartmentID='TAGGED_VALUES'/>
+		<mdOwnedViews/>
+	</mdElement>
+	<mdElement elementClass='Class' xmi:id='_19_0_4_8280264_1650803081831_11590_5454'>
+		<elementID xmi:idref='_19_0_4_8280264_1650803081829_344189_5453'/>
+		<geometry>651, 378, 95, 33</geometry>
+		<compartment compartmentID='TAGGED_VALUES'/>
+		<mdOwnedViews/>
+	</mdElement>
+	<mdElement elementClass='Class' xmi:id='_19_0_4_8280264_1650803100239_148020_5481'>
+		<elementID xmi:idref='_19_0_4_8280264_1650803100237_431692_5480'/>
+		<geometry>819, 434, 106, 33</geometry>
+		<compartment compartmentID='TAGGED_VALUES'/>
+		<mdOwnedViews/>
+	</mdElement>
+	<mdElement elementClass='Association' xmi:id='_19_0_4_8280264_1650803874471_955489_5526'>
+		<elementID xmi:idref='_19_0_4_8280264_1650803875473_542862_5527'/>
+		<linkFirstEndID xmi:idref='_19_0_4_8280264_1650802373927_652356_5137'/>
+		<linkSecondEndID xmi:idref='_19_0_4_8280264_1650802412255_158101_5164'/>
+		<geometry>189, 238; 189, 329; </geometry>
+		<compartment compartmentID='TAGGED_VALUES'/>
+		<compartment compartmentID='CONVEYED_INFORMATION_A' isContentLocked='true'/>
+		<compartment compartmentID='CONVEYED_INFORMATION_B' isContentLocked='true'/>
+		<nameVisible xmi:value='true'/>
+		<mdOwnedViews>
+			<mdElement elementClass='Role' xmi:id='_19_0_4_8280264_1650803875483_483380_5530'>
+				<elementID xmi:idref='_19_0_4_8280264_1650803875473_29890_5528'/>
+				<geometry>184, 238, 10, 10</geometry>
+				<compartment compartmentID='TAGGED_VALUES'/>
+				<mdOwnedViews/>
+			</mdElement>
+			<mdElement elementClass='Role' xmi:id='_19_0_4_8280264_1650803875484_282950_5533'>
+				<elementID xmi:idref='_19_0_4_8280264_1650803875473_437719_5529'/>
+				<geometry>184, 319, 10, 10</geometry>
+				<compartment compartmentID='TAGGED_VALUES'/>
+				<mdOwnedViews/>
+			</mdElement>
+			<mdElement elementClass='TextBoxWithIcon' xmi:id='_19_0_4_8280264_1650803878610_146943_5537'>
+				<geometry>192, 268, 54, 12</geometry>
+				<mdOwnedViews/>
+				<text>«satisfies»</text>
+			</mdElement>
+		</mdOwnedViews>
+		<linkStereotypeID xmi:idref='_19_0_4_8280264_1650803878610_146943_5537'/>
+		<associationFirstEndID xmi:idref='_19_0_4_8280264_1650803875483_483380_5530'/>
+		<associationSecondEndID xmi:idref='_19_0_4_8280264_1650803875484_282950_5533'/>
+	</mdElement>
+	<mdElement elementClass='Association' xmi:id='_19_0_4_8280264_1650804157356_30372_5560'>
+		<elementID xmi:idref='_19_0_4_8280264_1650804157866_65935_5561'/>
+		<linkFirstEndID xmi:idref='_19_0_4_8280264_1650802352423_446740_5110'/>
+		<linkSecondEndID xmi:idref='_19_0_4_8280264_1650802373927_652356_5137'/>
+		<geometry>350, 214; 224, 214; </geometry>
+		<compartment compartmentID='TAGGED_VALUES'/>
+		<compartment compartmentID='CONVEYED_INFORMATION_A' isContentLocked='true'/>
+		<compartment compartmentID='CONVEYED_INFORMATION_B' isContentLocked='true'/>
+		<nameVisible xmi:value='true'/>
+		<mdOwnedViews>
+			<mdElement elementClass='Role' xmi:id='_19_0_4_8280264_1650804157875_855937_5564'>
+				<elementID xmi:idref='_19_0_4_8280264_1650804157866_3301_5562'/>
+				<geometry>340, 209, 10, 10</geometry>
+				<compartment compartmentID='TAGGED_VALUES'/>
+				<mdOwnedViews/>
+			</mdElement>
+			<mdElement elementClass='Role' xmi:id='_19_0_4_8280264_1650804157876_634118_5567'>
+				<elementID xmi:idref='_19_0_4_8280264_1650804157866_923561_5563'/>
+				<geometry>224, 209, 10, 10</geometry>
+				<compartment compartmentID='TAGGED_VALUES'/>
+				<mdOwnedViews/>
+			</mdElement>
+			<mdElement elementClass='TextBoxWithIcon' xmi:id='_19_0_4_8280264_1650804160059_268730_5571'>
+				<geometry>263, 199, 49, 12</geometry>
+				<mdOwnedViews/>
+				<text>«derived»</text>
+			</mdElement>
+		</mdOwnedViews>
+		<linkStereotypeID xmi:idref='_19_0_4_8280264_1650804160059_268730_5571'/>
+		<associationFirstEndID xmi:idref='_19_0_4_8280264_1650804157875_855937_5564'/>
+		<associationSecondEndID xmi:idref='_19_0_4_8280264_1650804157876_634118_5567'/>
+	</mdElement>
+	<mdElement elementClass='Association' xmi:id='_19_0_4_8280264_1650804241902_287693_5577'>
+		<elementID xmi:idref='_19_0_4_8280264_1650804243343_69400_5578'/>
+		<linkFirstEndID xmi:idref='_19_0_4_8280264_1650802473432_161058_5218'/>
+		<linkSecondEndID xmi:idref='_19_0_4_8280264_1650802497471_302318_5245'/>
+		<geometry>833, 102; 917, 102; </geometry>
+		<compartment compartmentID='TAGGED_VALUES'/>
+		<compartment compartmentID='CONVEYED_INFORMATION_A' isContentLocked='true'/>
+		<compartment compartmentID='CONVEYED_INFORMATION_B' isContentLocked='true'/>
+		<nameVisible xmi:value='true'/>
+		<mdOwnedViews>
+			<mdElement elementClass='Role' xmi:id='_19_0_4_8280264_1650804243352_456112_5581'>
+				<elementID xmi:idref='_19_0_4_8280264_1650804243343_331984_5579'/>
+				<geometry>833, 97, 10, 10</geometry>
+				<compartment compartmentID='TAGGED_VALUES'/>
+				<mdOwnedViews/>
+			</mdElement>
+			<mdElement elementClass='Role' xmi:id='_19_0_4_8280264_1650804243353_982023_5584'>
+				<elementID xmi:idref='_19_0_4_8280264_1650804243343_400802_5580'/>
+				<geometry>907, 97, 10, 10</geometry>
+				<compartment compartmentID='TAGGED_VALUES'/>
+				<mdOwnedViews/>
+			</mdElement>
+			<mdElement elementClass='TextBoxWithIcon' xmi:id='_19_0_4_8280264_1650804247473_477961_5588'>
+				<geometry>848, 87, 54, 12</geometry>
+				<mdOwnedViews/>
+				<text>«satisfies»</text>
+			</mdElement>
+		</mdOwnedViews>
+		<linkStereotypeID xmi:idref='_19_0_4_8280264_1650804247473_477961_5588'/>
+		<associationFirstEndID xmi:idref='_19_0_4_8280264_1650804243352_456112_5581'/>
+		<associationSecondEndID xmi:idref='_19_0_4_8280264_1650804243353_982023_5584'/>
+	</mdElement>
+	<mdElement elementClass='Association' xmi:id='_19_0_4_8280264_1650804415235_277528_5594'>
+		<elementID xmi:idref='_19_0_4_8280264_1650804416010_457397_5595'/>
+		<linkFirstEndID xmi:idref='_19_0_4_8280264_1650802835663_753543_5380'/>
+		<linkSecondEndID xmi:idref='_19_0_4_8280264_1650803081831_11590_5454'/>
+		<geometry>784, 340; 714, 340; 714, 378; </geometry>
+		<compartment compartmentID='TAGGED_VALUES'/>
+		<compartment compartmentID='CONVEYED_INFORMATION_A' isContentLocked='true'/>
+		<compartment compartmentID='CONVEYED_INFORMATION_B' isContentLocked='true'/>
+		<nameVisible xmi:value='true'/>
+		<mdOwnedViews>
+			<mdElement elementClass='Role' xmi:id='_19_0_4_8280264_1650804416023_529180_5598'>
+				<elementID xmi:idref='_19_0_4_8280264_1650804416011_8187_5596'/>
+				<geometry>774, 335, 10, 10</geometry>
+				<compartment compartmentID='TAGGED_VALUES'/>
+				<mdOwnedViews/>
+			</mdElement>
+			<mdElement elementClass='Role' xmi:id='_19_0_4_8280264_1650804416023_847341_5601'>
+				<elementID xmi:idref='_19_0_4_8280264_1650804416011_737679_5597'/>
+				<geometry>709, 368, 10, 10</geometry>
+				<compartment compartmentID='TAGGED_VALUES'/>
+				<mdOwnedViews/>
+			</mdElement>
+			<mdElement elementClass='TextBoxWithIcon' xmi:id='_19_0_4_8280264_1650804424379_723452_5605'>
+				<geometry>706, 325, 49, 12</geometry>
+				<mdOwnedViews/>
+				<text>«derived»</text>
+			</mdElement>
+		</mdOwnedViews>
+		<linkStereotypeID xmi:idref='_19_0_4_8280264_1650804424379_723452_5605'/>
+		<associationFirstEndID xmi:idref='_19_0_4_8280264_1650804416023_529180_5598'/>
+		<associationSecondEndID xmi:idref='_19_0_4_8280264_1650804416023_847341_5601'/>
+	</mdElement>
+	<mdElement elementClass='Association' xmi:id='_19_0_4_8280264_1651138649609_857548_5014'>
+		<elementID xmi:idref='_19_0_4_8280264_1651138652349_729723_5015'/>
+		<linkFirstEndID xmi:idref='_19_0_4_8280264_1650803100239_148020_5481'/>
+		<linkSecondEndID xmi:idref='_19_0_4_8280264_1650803081831_11590_5454'/>
+		<geometry>819, 459; 714, 459; 714, 411; </geometry>
+		<compartment compartmentID='TAGGED_VALUES'/>
+		<compartment compartmentID='CONVEYED_INFORMATION_A' isContentLocked='true'/>
+		<compartment compartmentID='CONVEYED_INFORMATION_B' isContentLocked='true'/>
+		<nameVisible xmi:value='true'/>
+		<mdOwnedViews>
+			<mdElement elementClass='Role' xmi:id='_19_0_4_8280264_1651138652399_321540_5018'>
+				<elementID xmi:idref='_19_0_4_8280264_1651138652351_363799_5016'/>
+				<geometry>809, 454, 10, 10</geometry>
+				<compartment compartmentID='TAGGED_VALUES'/>
+				<mdOwnedViews/>
+			</mdElement>
+			<mdElement elementClass='Role' xmi:id='_19_0_4_8280264_1651138652400_815322_5021'>
+				<elementID xmi:idref='_19_0_4_8280264_1651138652354_523937_5017'/>
+				<geometry>709, 411, 10, 10</geometry>
+				<compartment compartmentID='TAGGED_VALUES'/>
+				<mdOwnedViews/>
+			</mdElement>
+			<mdElement elementClass='TextBoxWithIcon' xmi:id='_19_0_4_8280264_1651138665328_804146_5025'>
+				<geometry>719, 444, 49, 12</geometry>
+				<mdOwnedViews/>
+				<text>«derived»</text>
+			</mdElement>
+		</mdOwnedViews>
+		<linkStereotypeID xmi:idref='_19_0_4_8280264_1651138665328_804146_5025'/>
+		<associationFirstEndID xmi:idref='_19_0_4_8280264_1651138652399_321540_5018'/>
+		<associationSecondEndID xmi:idref='_19_0_4_8280264_1651138652400_815322_5021'/>
+	</mdElement>
+	<mdElement elementClass='Class' xmi:id='_19_0_4_8280264_1651138833709_892604_5057'>
+		<elementID xmi:idref='_19_0_4_8280264_1651138833702_975731_5056'/>
+		<geometry>616, 245, 103, 45</geometry>
+		<compartment compartmentID='TAGGED_VALUES'/>
+		<mdOwnedViews/>
+	</mdElement>
+	<mdElement elementClass='Class' xmi:id='_19_0_4_8280264_1651139565481_953841_5084'>
+		<elementID xmi:idref='_19_0_4_8280264_1651139565477_124539_5083'/>
+		<geometry>777, 245, 191, 47</geometry>
+		<compartment compartmentID='TAGGED_VALUES'/>
+		<mdOwnedViews/>
+	</mdElement>
+</mdOwnedViews>

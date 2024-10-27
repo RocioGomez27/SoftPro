@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen">
+    <link rel="stylesheet" href="" th:href="@{/css/styleActividad.css}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" th:href="@{/images/logo.png}" type="image/png" sizes="256x256">
+    <title>Where2Go</title>
+</head>
+<body>
+
+    <div class="actividadNotFound" th:if="${actividad} == NULL">
+        <h2 class="notFoundText">Error: No se ha encontrado esa actividad.</h2>
+        <h2 th:text="${usuario.UUID}">
+        </h2>
+    </div>
+
+    <div th:if="${actividad} != NULL">
+        <header class="mainHeader">
+            <form th:action="@{/home/}" id="goToHome" th:object="${usuario}" method="post">
+                <input required type="hidden" id="username" th:field="*{username}" th:value="${usuario.username}">
+                <input required type="hidden" id="password" th:field="*{password}" th:value="${usuario.password}">
+
+                <div class="logo_Header" onclick="document.getElementById('goToHome').submit();">
+                    <img th:src="@{/images/logo.png}" height="80px" width="65px"/>
+                    <span>Where2Go</span>
+                </div>
+            </form>
+            <div>
+                <h2 th:text="'¿Qué tal ' + ${actividad.Nombre} + ' ' + ${usuario.nombre} + '?'"></h2>
+            </div>
+            <div class="user_Header">
+                <div class="texto_Userheader">
+                    <form th:action="@{/home/profile/{user}(user=${usuario.username})}" id="goToProfile" th:object="${usuario}" method="post">
+                        <input required type="hidden" id="uuid" th:field="*{UUID}" th:value="${usuario.UUID}">
+                        <a class="goToPerfil_Header" onclick="document.getElementById('goToProfile').submit();">Mi perfil</a>
+                    </form>
+                    
+                    <br>
+                    <a class="cerrarSesion_Header" th:href="@{/logout}">Cerrar sesión</a>
+                </div>
+                <div class="avatar_Header">
+                    <img th:if="${usuario.Avatar} != null" class="userPhoto_Header" th:src="${usuario.Avatar}" ></img>
+                    <img th:if="${usuario.Avatar} == null" class="userPhoto_Header" th:src="@{/images/defaultAvatar.png}"></img>
+                </div>
+            </div>
+        </header>
+
+        <div class="restoWeb">
+            <div class="activityContainer">
+                <div class="headerActivity">
+                    <div class="photoContainer">
+                        <img th:if="${actividad.ImageUrl} != NULL" th:src="'https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=' + ${actividad.ImageUrl} + '&key=AIzaSyC9pH40cKVvwzNyOWVsoY6Kq47xsO0_B30'">
+                        <img th:if="${actividad.ImageUrl} == NULL" th:src="@{/images/NoImageAvaliable.png}">
+
+                    </div>
+                    <div class="TextoContainer">
+                        <div class="Titulo_Text">
+                            <h1 th:text="${actividad.Nombre}">
+                        </div>
+                        <div class="Descripcion_Text">
+                            <p th:text="${actividad.Descripcion}"></p>
+                        </div>
+
+                        <div class="ContainerFiltros">
+                            <ul class="filtrosActividad">
+                                <li th:each="filtro : ${actividad.obtenerFiltros()}" th:text="${filtro}"></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="Actividad_OtraInfo">
+                        <div>
+                            <label th:if="${actividad.Valoraciones} != NULL" class="Actividad_InfoPies" th:text="${ '🦶'.repeat(actividad.Valoraciones)}"></label>
+                        </div>
+                        <br>
+                        <div>
+                            <label th:if="${actividad.Precio} != NULL" class="Actividad_InfoDinero" th:text="${ '💸'.repeat(actividad.Precio)}"></label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="informationContainer">
+                <div class="PanelIzquierdo">
+                    <div class="PanelMapa">
+                            <iframe class="mapa"
+                            loading="lazy"
+                            height="350"
+                            frameborder="0" style="border:0"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            th:src="'https://www.google.com/maps/embed/v1/place?key=AIzaSyC9pH40cKVvwzNyOWVsoY6Kq47xsO0_B30'+ '&' + 'q='+ ${actividad.Latitud} + ',' +${actividad.Longitud}+ '&' + 'center='+${actividad.Latitud}+','+${actividad.Longitud}+'&zoom=14'">
+                            </iframe>       
+                                                
+                        <!-- <div style="background-color: red; height: 350px;">
+                            <span>a</span>
+                        </div> -->
+
+                        <div class="Ubi">
+                            <span>Ubicación</span>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="PanelDerecho">   
+                    <div class="comentarios">
+                        <div class="addComentContainer">
+                            <form class="formulario" th:action="@{/actividades/comentarios/save}" method="post" th:object="${newComentario}">
+                                <input required hidden id="usuario" name="usuario" th:value="${userUsername}"   />
+                                <input required hidden id="actividad" name="actividad" th:value="${actividadAUID}"/>
+                                <input required type="hidden" id="userUUID" name="userUUID" th:value="${usuario.UUID}">
+    
+                                 <div class="Campo">
+                                     <label for="texto_Comentario"> Comentario: </label>
+                                     <input required class="comentarioInput" type="text" th:field="*{texto_Comentario}">
+                                 </div>
+                                 <div class="Campo">
+                                    <label for="texto_Comentario"> Valoracion: </label>
+                                    <select th:field="*{valoracion}">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                      </select>
+                                </div>
+                                <div class="ButtonContainer">
+                                        <input class="Button" type="submit" value="Añadir" >
+                                    </div>
+                             </form>
+                        </div>
+
+                        <div class="containerComentarios" style="overflow-y: auto; height:350px">
+                            <ul class="listaComentarios">
+                                <li th:each="comentario : ${actividad.comentarios}">
+                                   <div class="commentHeader">
+                                    <div>
+                                        <form th:action="@{/home/profile/{user}(user=${comentario.usuario})}" th:id="'goTo'+${comentario.CUID}+'Profile'" th:object="${usuario}" method="post">
+                                            <input required type="hidden" id="uuid" th:field="*{UUID}" th:value="${usuario.UUID}">
+                                            <span class="goToPerfil_Header" th:text="${comentario.usuario}" th:onclick="|document.getElementById(`goTo${comentario.CUID}Profile`).submit();|"></span>
+                                        </form>
+
+                                    </div>
+
+                                    <div>
+                                        <span class="fechaComment" th:text="${comentario.fechaComentario}"></span>
+                                    </div>
+
+                                    <div>
+                                        <span class="piesesito" th:text="${'🦶'.repeat(comentario.valoracion)}"></span>
+                                    </div>
+                                   </div>
+                                   <div class="commentText">
+                                        <p th:text="${comentario.texto_Comentario}"></p>
+                                   </div>
+                                   <div th:if="${usuario.esModerador || comentario.usuario == usuario.username}">
+                                       <form th:action="@{/actividades/comentarios/borrar/{cuid}(cuid=${comentario.CUID})}" method="post" th:object="${usuario}">
+                                            <input required type="hidden" id="userUUID" name="userUUID" th:value="${usuario.UUID}">
+                                            <button style="text-align: right;" class="Button" type="submit">❌</button>
+                                       </form>
+
+                                       <!-- <a th:href="@{/actividades/comentarios/borrar/{cuid}(cuid=${comentario.CUID})}" style="text-decoration: none; text-align: right;" class="Button">❌</a> -->
+
+                                   </div> 
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                
+            </div>
+
+        </div>
+        
+
+    </div>
+    
+</body>
+</html>

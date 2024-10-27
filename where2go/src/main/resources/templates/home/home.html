@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen">
+    <link rel="stylesheet" href="" th:href="@{/css/styleHome.css}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" th:href="@{/images/logo.png}" type="image/png" sizes="256x256">
+    <script th:src="@{/js/Home.js}"></script>
+
+    <title>Where2Go</title>
+</head>
+<body>
+
+    <div class="notLoggedIn" th:if="${usuario} == NULL">
+        <h1>No has iniciado sesión.</h1>
+        <a th:href="@{/login}">Ir a Login</a>
+    </div>
+
+    <div th:if="${usuario} != NULL">
+        <header class="mainHeader">
+            <form th:action="@{/home/}" id="goToHome" th:object="${usuario}" method="post">
+                <input required type="hidden" id="username" th:field="*{username}" th:value="${usuario.username}">
+                <input required type="hidden" id="password" th:field="*{password}" th:value="${usuario.password}">
+
+                <div class="logo_Header" onclick="document.getElementById('goToHome').submit();">
+                    <img th:src="@{/images/logo.png}" height="80px" width="65px"/>
+                    <span>Where2Go</span>
+                </div>
+            </form>
+
+            <div>
+                <h2 th:text="'¿Qué te apetece hacer hoy ' + ${usuario.nombre} + '?'"></h2>
+            </div>
+            <div class="user_Header">
+                <div class="texto_Userheader">
+                    <form th:action="@{/home/profile/{user}(user=${usuario.username})}" id="goToProfile" th:object="${usuario}" method="post">
+                        <input required type="hidden" id="uuid" th:field="*{UUID}" th:value="${usuario.UUID}">
+                        <a class="goToPerfil_Header" onclick="document.getElementById('goToProfile').submit();">Mi perfil</a>
+                    </form>
+                    <br>
+                    <a class="cerrarSesion_Header" th:href="@{/home}">Cerrar sesión</a>
+                </div>
+                <div class="avatar_Header">
+                    <img th:if="${usuario.Avatar} != null" class="userPhoto_Header" th:src="${usuario.Avatar}" ></img>
+                    <img th:if="${usuario.Avatar} == null" class="userPhoto_Header" th:src="@{/images/defaultAvatar.png}"></img>
+                </div>
+            </div>
+        </header>
+
+        <div class="resto_Web">
+            <div class="contenedorIzq">
+                <div class="Panel">
+                    <div class="panel_Header">
+                        <h3 class="Filter_Text">Filtros</h3>
+                        <hr/>
+                    </div>
+                    <form th:action="@{/home/filtros=}" id="aplicar" th:object="${usuario}" method="post">
+                        <input required type="hidden" id="uuid" th:field="*{UUID}" th:value="${usuario.UUID}">
+
+                        <div class="byType">
+                            <ul class="typeList">
+                                <li id="RestaurantesLi" class="tipo_Restaurante" onclick="setChecked('Restaurantes','RestaurantesLi')">
+                                    <input class="filterType" id="Restaurantes" name="Restaurantes" type="checkbox">🍴 Restaurante</span>
+                                </li>
+                                <li id="AireLibreLi" class="tipo_AireLibre" onclick="setChecked('AireLibre','AireLibreLi')">
+                                    <input class="filterType" id="AireLibre" name="AireLibre" type="checkbox">🪁 Naturaleza</input>
+                                </li>
+                                <li id="OcioLi" class="tipo_Ocio" onclick="setChecked('Ocio','OcioLi')">
+                                    <input class="filterType" id="Ocio" name="Ocio" type="checkbox">🎢 Ocio</input>
+                                </li>
+                            </ul>
+
+                            <div class="byType">
+                                <ul class="typeList">
+                                    <li id="TiendaLi" class="tipo_Tienda" onclick="setChecked('Tienda','TiendaLi')">
+                                        <input class="filterType" id="Tienda" name="Tienda" type="checkbox">🛒 Tienda</input>
+                                    </li>
+
+                                    <li id="CulturaLi" class="tipo_Cultura" onclick="setChecked('Cultura','CulturaLi')">
+                                        <input class="filterType" id="Cultura" name="Cultura" type="checkbox">🗿 Cultura</input>
+                                    </li>
+                                    <li id="TransporteLi" class="tipo_Transporte" onclick="setChecked('Transporte','TransporteLi')">
+                                        <input class="filterType" id="Transporte" name="Transporte" type="checkbox">🚌 Transporte</input>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: -70px;" class="panel_Header">
+                            <h4 class="Filter_Text">Por rango</h4>
+                            <h4 style="margin-top: -20px;" class="Filter_Text">[Al Mínimo para no filtrar]</h4>
+                            <hr/>
+                        </div>
+
+                        <div class="rangeBar">
+                            <span>Rango de pies:</span>
+                            <input class="barR" type="range" id="rangoPies" value="0" name="rangoPies" min="0" max="5" onchange="document.getElementById('feetSelected').innerText = document.getElementById('rangoPies').value"/>
+                            <span id="feetSelected">0</span>
+                        </div>
+
+                        <div class="rangeBar">
+                            <span>Rango de precio:</span>
+                            <input class="barR" type="range" id="rangoPrecio" value="0" name="rangoPrecio" min="0" max="5" onchange="document.getElementById('priceSelected').innerText = document.getElementById('rangoPrecio').value"/>
+                            <span id="priceSelected">0</span>
+                        </div>
+
+                        <div class="aplicarFiltroContainer">
+                            <a onclick="aplicarFiltros()" class="boton_Filtros">Aplicar Filtros</a>
+                        </div>
+                    </form>
+
+
+
+
+                </div>
+                
+            </div>
+
+            <div class="Panel_Derecho">
+                <div class="PanelActividades">
+                    <div class="ListadoActividades" style="overflow-y: auto; height: 80vh">
+                        <ul>
+                            <li>
+                                    <form th:action="@{/home/{auid}(auid=${actividad.AUID})}" th:object="${usuario}" class="actividad" th:each="actividad : ${listaActividades}" method="post" th:id="${actividad.AUID}" th:onclick="|document.getElementById('${actividad.AUID}').submit();|">
+                                        <input required type="hidden" id="uuid" th:field="*{UUID}" th:value="${usuario.UUID}">
+
+                                        <div class="Actividad_bloque">
+                                            <div class="Actividad_imagen">
+                                                <img th:if="${actividad.ImageUrl} != NULL" th:src="'https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=' + ${actividad.ImageUrl} + '&key=AIzaSyC9pH40cKVvwzNyOWVsoY6Kq47xsO0_B30'">
+                                                <img th:if="${actividad.ImageUrl} == NULL" th:src="@{/images/NoImageAvaliable.png}">
+
+                                            </div>
+                                            <div class="Actividad_texto">
+                                                <h2 class="Actividad_titulo" th:text="${actividad.Nombre}"></h2>
+                                                <label class="Actividad_desc" th:text="${actividad.Descripcion}"></label>
+                                            </div>
+                                            <div class="Actividad_OtraInfo">
+                                                <div>
+                                                    <label th:if="${actividad.Valoraciones} != NULL" class="Actividad_InfoPies" th:text="${ '🦶'.repeat(actividad.Valoraciones)}"></label>
+                                                </div>
+                                                <br>
+                                                <div>
+                                                    <label th:if="${actividad.Precio} != NULL" class="Actividad_InfoDinero" th:text="${ '💸'.repeat(actividad.Precio)}"></label>
+                                                </div>
+
+                                                <div>
+                                                    <ul class="filtrosActividad">
+                                                        <li th:each="filtro : ${actividad.obtenerFiltros()}" th:text="${filtro}"></li>
+                                                    </ul>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </form>
+
+                            </li>
+                        </ul>
+    
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+
+    </div >
+
+</body>
+</html>

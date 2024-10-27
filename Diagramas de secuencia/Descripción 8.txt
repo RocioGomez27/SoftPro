@@ -1,0 +1,3 @@
+1. El moderador entra a la aplicación y en función de las sugerencias recibidas creará planes.
+2. El cliente consulta las sugerencias creadas.
+3. El cliente decidirá si aceptar o no las sugerencias recomendadas.
